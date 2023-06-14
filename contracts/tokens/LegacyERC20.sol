@@ -5,7 +5,7 @@ import "../openzeppelin/contracts/access/Ownable.sol";
 import "./BaseERC20.sol";
 import "./interfaces/ILegacyERC20.sol";
 
-contract ERC20 is BaseERC20, Ownable, ILegacyERC20 {
+contract LegacyERC20 is BaseERC20, Ownable, ILegacyERC20 {
 
   mapping(address => uint256) private _balances;
   mapping(address => mapping(address => uint256)) private _allowances;
